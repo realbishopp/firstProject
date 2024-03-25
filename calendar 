@@ -1,0 +1,15 @@
+import calendar
+
+def print_calendar():
+    year = int(input("Enter the year: "))
+    month = int(input("Enter the month (1-12): "))
+
+    # Check if the input month is valid
+    if month < 1 or month > 12:
+        print("Invalid month input. Please enter a month between 1 and 12.")
+        return
+
+    cal = calendar.month(year, month)
+    print("\n", cal)
+
+print_calendar()
